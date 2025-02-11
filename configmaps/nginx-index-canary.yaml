@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-canary
+  namespace: canary-demo
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Nginx Canary Deployment</title>
+    </head>
+    <body>
+        <h1>Welcome to Nginx</h1>
+        <h2>Version: 1.21 (Canary)</h2>
+    </body>
+    </html>
